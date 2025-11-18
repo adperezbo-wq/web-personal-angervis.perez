@@ -52,19 +52,16 @@ p{
 
 .navegacion-principal{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     background-color: var(--primario);
 }
 
-@media (min-width 400px) {
-    body{
-        background-color: cornflowerblue;
-    }   
-}
 
-@media (min-width 700px ) {
-    body{
-        background-color: var(--secundario);
+
+@media (min-width:768px ) {
+    .navegacion-principal{
+        flex-direction:row;
     }
 }
 
@@ -81,4 +78,20 @@ p{
 .navegacion-principal a:hover{
     color: var(--oscuro);
     background-color: var(--secundario);
+}
+
+/*estilos para el hero*/
+.hero{
+    background-image:url("../img/hero.1024x768.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    position: relative;
+}
+
+.contenido-hero{
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 400px;
 }
