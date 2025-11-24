@@ -15,8 +15,21 @@ body{font-family: "Roboto" , sans-serif;
     font-size:var(--tamaño-fuente);/*1rem =16px*/
 }
 
+h1{
+    font-size: 3.8rem;
+}
 
+h2{
+    font-size: 3.2rem;
+}
 
+h3{
+    font-size: 2.6rem;
+}
+
+h1,h2,h3{
+    text-align: center;
+}
 /*utilidades*/
 .contenedor{
     width: 75%;
@@ -26,6 +39,30 @@ body{font-family: "Roboto" , sans-serif;
 .bg-secundario{
     background-color: var(--primario);
 }
+
+
+.boton{
+    background-color: var(--primario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+
+
+@media (min-width: 400px) {
+    .boton{
+        width: auto;
+    }
+}
+
 
 h1{
     font-size: 2.5rem;
@@ -47,7 +84,7 @@ h2{
 }
 
 p{
-    font-size: 2.6rem;
+    font-size: 1.6rem;
 }
 
 .navegacion-principal{
@@ -96,10 +133,62 @@ p{
     position: absolute;
     top: 0px;
     left: 0px;
+    right: 0px;
     bottom: 0px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.infocmacion {
+    display: flex;
+    justify-content: center;
+}
+
+.micontenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+@media (min-width:768px) {
+    .micontenido{
+        flex-direction: row;
+    }
+}
+
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+
+
+.contenido h3{
+    font-weight: normal;
+    color: var(--primario)f;
+}
+
+.contenido p{
+    font-size: 1.5rem;
+    line-height: 2;
+    text-align: center;
+}
+
+
+.icono {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
