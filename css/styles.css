@@ -13,6 +13,7 @@ html{
 
 body{font-family: "Roboto" , sans-serif;
     font-size:var(--tamaño-fuente);/*1rem =16px*/
+    background-image: linear-gradient(to top,rgb(204, 204, 204)0%,white 100%);
 }
 
 h1{
@@ -30,6 +31,24 @@ h3{
 h1,h2,h3{
     text-align: center;
 }
+
+fieldset{
+    border: none;
+}
+
+footer{
+    text-align: center;
+}
+
+.sombra{
+    -webkit-box-shadow:6px 10px 22px -8px rgba(92,87,92,0.68);
+    -moz-box-shadow:6px 10px 22px -8px rgba(92,87,92,0.68);
+    box-shadow: 6px 10px 22px -8px rgba(92,87,92,0.68);
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
 /*utilidades*/
 .contenedor{
     width: 75%;
@@ -191,4 +210,38 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.formulario{
+    background-color: var(--gris);
+    width:(60rem,100%);
+    margin:0 auto;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: var(--primario);
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo{
+    color: var(--secundario);
+    font-weight: bold;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
